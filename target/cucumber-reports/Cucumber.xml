@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="52.041054">
+    <testcase classname="Cluno offers" name="Test scenario one -Cluno get all offers and verify the available set to true for all offers" time="8.233343">
+        <system-out>
+            <![CDATA[Given fetch the "https://api.cluno.com/offerservice/v1/offer" for the cluno with the endpoint "/query".passed
+And Execute the webservice for the get method...............................passed
+Then verify the response code and response with available set to true for all offers.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Cluno offers" name="Test scenario two - Cluno get all offers and verify the fuel type or emmission label and environmentFriendly" time="14.860512">
+        <system-out>
+            <![CDATA[Given fetch the "https://api.cluno.com/offerservice/v1/offer" for the cluno with the endpoint "/query".passed
+And Execute the webservice for the get method...............................passed
+Then verify the response code and response if environmentFriendly is true only for cars with fuelType electric or Hybrid or with emissionLabel A.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Cluno offers" name="Test Scenario three - Cluno get all offers and verify the isAvailableAtShortNotice and estimatedDeliveryTime" time="28.436374">
+        <system-out>
+            <![CDATA[Given fetch the "https://api.cluno.com/offerservice/v1/offer" for the cluno with the endpoint "/query".passed
+And Execute the webservice for the get method...............................passed
+Then verify the response code and response for all offers if isAvailableAtShortNotice is set to true and verify the estimatedDeliveryTime as "innerhalb von 2 Wochen" for the same.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Cluno offers" name="Test scenario four -Cluno get specific offers and verify the isAvailableAtShortNotice and estimatedDeliveryTime" time="0.272484">
+        <system-out>
+            <![CDATA[Given fetch the "https://api.cluno.com/offerservice/v1/offer" for the cluno with the endpoint "/117".passed
+And Execute the webservice for the get method...............................passed
+Then verify the response code and response if isAvailableAtShortNotice is set to true and verify the estimatedDeliveryTime as "innerhalb von 2 Wochen" for the same.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Cluno offers" name="Test scenario two - Cluno get all offers and verify the fuel type or emmission label and environmentFriendly" time="0.238341">
+        <system-out>
+            <![CDATA[Given fetch the "https://api.cluno.com/offerservice/v1/offer" for the cluno with the endpoint "/117".passed
+And Execute the webservice for the get method...............................passed
+Then verify the response code for specific offer and response if environmentFriendly is true only for cars with fuelType electric or Hybrid or with emissionLabel A.passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
